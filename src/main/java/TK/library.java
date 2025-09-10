@@ -105,7 +105,7 @@ public class library {
     private void listBooks() {
         for (int i = 0; i < books.size(); i++) {
             book b = books.get(i);
-            System.out.printf("%2d. Title: %-30s Author: %-20s Pages: %-4d ISBN: %-10s%n",
+            System.out.printf("%2d. Title: %-10s Author: %-10s Pages: %-10s ISBN: %-10s%n",
                     i + 1, b.getTitle(), b.getAuthor(), b.getPageCount(), b.getIsbn());
         }
     }
