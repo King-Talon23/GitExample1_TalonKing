@@ -120,9 +120,9 @@ public class library {
             if (!input.isEmpty()) {
                 potentialISBN = Long.parseLong(input);
                 if (potentialISBN < min || max < potentialISBN) {
-                    System.out.print("Invalid ISBN: A valid ISBN must be 13 digits.");
+                    System.out.println("Invalid ISBN: A valid ISBN must be 13 digits.");
                 } else if (isbnList.contains(potentialISBN)) {
-                    System.out.print("Invalid ISBN: Two books CANNOT have the same ISBN");
+                    System.out.println("Invalid ISBN: Two books CANNOT have the same ISBN");
                 } else {
                     isbnList.add(potentialISBN);
                     break;
@@ -138,12 +138,12 @@ public class library {
     private int pageNumValidator() {
         int pageNum = 0;
         while (true) {
-            System.out.println("Enter ISBN: ");
+            System.out.println("Enter Page Count: ");
             String input = scanner.nextLine();
             if (!input.isEmpty()) {
                 pageNum = Integer.parseInt(input);
                 if (pageNum <= 0) {
-                    System.out.print("Invalid: A book must have atleast 1 page");
+                    System.out.println("Invalid: A book must have atleast 1 page");
                 } else {
                     break;
                 }
