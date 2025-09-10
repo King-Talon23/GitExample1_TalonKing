@@ -49,8 +49,7 @@ public class library {
         System.out.print("Enter Author: ");
         String author = scanner.nextLine();
         long isbn = isbnValidator();
-        System.out.print("Enter page count: ");
-        int pages = scanner.nextInt();
+        int pages = pageNumValidator();
 
         books.add(new book(title, author, isbn, pages));
     }
